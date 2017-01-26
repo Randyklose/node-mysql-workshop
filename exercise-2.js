@@ -28,7 +28,7 @@ function getAccounts() {
 getAccounts()
     .then(function(res) {
         res.forEach(function(row){
-        console.log('#' + color.bold(row.id) + ': ' + row.email);
+        console.log(color.bold('#') + color.bold(row.id) + ': ' + row.email);
         });
         connection.end();
 })

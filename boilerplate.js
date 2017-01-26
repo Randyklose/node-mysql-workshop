@@ -1,8 +1,8 @@
 var mysql = require('promise-mysql');
 
 var connection = mysql.createConnection({
-  host     : process.env.IP,
-  user     : process.env.C9_USER,
+  host     : 'localhost',
+  user     : 'randyk',
   password : '',
   database : 'addressbook',
   connectionLimit: 10
